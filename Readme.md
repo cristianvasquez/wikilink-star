@@ -34,7 +34,7 @@ A possible serialization in RDF-star could be:
 	:hasName "Readme.md" .
 
 :Bob a :Node ;
-	:hasAlias "Bobby" ;
+	:hasAlias "Alias Bobby" ;
 	:hasName "Bob.md" .
 
 :Alice a :Node ;
@@ -69,36 +69,6 @@ A possible serialization in RDF-star could be:
 	
 ```
 
-@TODO
-
-Example
-
-- [ ] Enable rules
-
-<http://eulersharp.sourceforge.net/>
-
-```n3
-PREFIX : <http://www.example.org/> 
-
-{
-    ?claim :statedBy ?something
-}
-=>
-{
-    ?something :claims ?claim .
-}.
-
-```
-
-- [ ] Show some sparql results embedded in Obsidian.
-
-```sparql
-PREFIX : <http://www.example.org/> 
-
-SELECT ?something WHERE {
-   ?something :claims << :Alice ?property ?value >>
-}
-```
 
 ---
 
