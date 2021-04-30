@@ -14,7 +14,10 @@ The phrase:
 
 Can be represented  using something similar to Turtle-star syntax, which uses double angle brackets to enclose a statement.
 
+```
 << [[Alice]] has a job title 'Assistant designer' >> according to [[Bob|Alias bobby]] >>
+
+```
 
 Note that this statement does not assert that Alice has a job title of 'Assistant Designer'; it says that Bob has made that claim.
 
@@ -31,7 +34,7 @@ A possible serialization in RDF-star could be:
 	:hasName "Readme.md" .
 
 :Bob a :Node ;
-	:hasAlias "Bobby" ;
+	:hasAlias "Alias Bobby" ;
 	:hasName "Bob.md" .
 
 :Alice a :Node ;
@@ -66,36 +69,6 @@ A possible serialization in RDF-star could be:
 	
 ```
 
-@TODO
-
-Example
-
-- [ ] Enable rules
-
-<http://eulersharp.sourceforge.net/>
-
-```n3
-PREFIX : <http://www.example.org/> 
-
-{
-    ?claim :statedBy ?something
-}
-=>
-{
-    ?something :claims ?claim .
-}.
-
-```
-
-- [ ] Show some sparql results embedded in Obsidian.
-
-```sparql
-PREFIX : <http://www.example.org/> 
-
-SELECT ?something WHERE {
-   ?something :claims << :Alice ?property ?value >>
-}
-```
 
 ---
 
