@@ -14,7 +14,10 @@ The phrase:
 
 Can be represented  using something similar to Turtle-star syntax, which uses double angle brackets to enclose a statement.
 
+```
 << [[Alice]] has a job title 'Assistant designer' >> according to [[Bob|Alias bobby]] >>
+
+```
 
 Note that this statement does not assert that Alice has a job title of 'Assistant Designer'; it says that Bob has made that claim.
 
