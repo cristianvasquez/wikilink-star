@@ -1,0 +1,29 @@
+{
+  "name": "wikilink-star",
+  "version": "0.0.1",
+  "description": "--- date updated: '2021-04-29T02:14:34+02:00'",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/app.js",
+    "dev": "ts-node ./src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianvasquez/wikilink-star.git"
+  },
+  "author": "Cristian Vasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianvasquez/wikilink-star/issues"
+  },
+  "homepage": "https://github.com/cristianvasquez/wikilink-star#readme",
+  "dependencies": {
+    "@types/node": "^15.0.1",
+    "chevrotain": "^9.0.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
