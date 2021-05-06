@@ -15,7 +15,7 @@ The phrase:
 Can be represented  using something similar to Turtle-star syntax, which uses double angle brackets to enclose a statement.
 
 ```
-<< [[Alice]] has a job title 'Assistant designer' >> according to [[Bob|Alias bobby]] >>
+<< << [[Alice]] has a job title 'Assistant designer' >> according to [[Bob|Alias bobby]] >>
 
 ```
 
@@ -73,3 +73,18 @@ A possible serialization in RDF-star could be:
 ---
 
 Exploration by Cristian Vasquez
+
+---
+What's cleaner?
+
+<< A x B | y C >>
+
+<< << A x B >> y C >>
+
+<< < A x B >> y C >
+
+<<< A x B >> y C >
+
+<< < A x B > y C >>
+
+<<< A x B > y C >>
